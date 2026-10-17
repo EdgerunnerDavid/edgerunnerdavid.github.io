@@ -1,208 +1,160 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Gray Zone 0.5 Update | rln is dasabi</title><meta name="author" content="Jadgtiger"><meta name="copyright" content="Jadgtiger"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hey, everyone,The Rogue Ops update for Gray Zone Warfare launches on October 22. To express our gratitude for your support, all Supporter Edition owners will receive access to the update preview start">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Gray Zone 0.5 Update">
-<meta property="og:url" content="http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
-<meta property="og:site_name" content="rln is dasabi">
-<meta property="og:description" content="Hey, everyone,The Rogue Ops update for Gray Zone Warfare launches on October 22. To express our gratitude for your support, all Supporter Edition owners will receive access to the update preview start">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
-<meta property="article:published_time" content="2026-10-17T07:44:55.000Z">
-<meta property="article:modified_time" content="2026-10-17T09:22:19.410Z">
-<meta property="article:author" content="Jadgtiger">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Gray Zone 0.5 Update",
-  "url": "http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/",
-  "image": "http://example.com/img/butterfly-icon.png",
-  "datePublished": "2026-10-17T07:44:55.000Z",
-  "dateModified": "2026-10-17T09:22:19.410Z",
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Jadgtiger",
-      "url": "http://example.com"
-    }
-  ]
-}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
-    (() => {
-      
-    const saveToLocal = {
-      set: (key, value, ttl) => {
-        const data = { value }
+<html>
 
-        if (ttl != null) {
-          data.expiry = Date.now() + ttl * 86400000
-        }
-
-        localStorage.setItem(key, JSON.stringify(data))
-      },
-      get: key => {
-        const itemStr = localStorage.getItem(key)
-        if (!itemStr) return
-
-        try {
-          const data = JSON.parse(itemStr)
-
-          if (data.expiry && Date.now() > data.expiry) {
-            localStorage.removeItem(key)
-            return
-          }
-
-          return data.value
-        } catch {
-          localStorage.removeItem(key)
-        }
-      }
-    }
-
-    const scriptCache = new Map()
-    const cssCache = new Map()
-    window.btf = {
-      saveToLocal,
-      getScript: (url, attr = {}) => {
-        if (scriptCache.has(url)) {
-          return scriptCache.get(url)
-        }
-
-        const promise = new Promise((resolve, reject) => {
-          const script = document.createElement('script')
-
-          script.src = url
-          script.async = true
-
-          for (const key in attr) {
-            script.setAttribute(key, attr[key])
-          }
-
-          script.onload = resolve
-          script.onerror = reject
-
-          document.head.appendChild(script)
-        })
-
-        scriptCache.set(url, promise)
-
-        return promise
-      },
-      getCSS: (url, id) => {
-        if (cssCache.has(url)) {
-          return cssCache.get(url)
-        }
-
-        const promise = new Promise((resolve, reject) => {
-          const link = document.createElement('link')
-
-          link.rel = 'stylesheet'
-          link.href = url
-
-          if (id) {
-            link.id = id
-          }
-
-          link.onload = resolve
-          link.onerror = reject
-
-          document.head.appendChild(link)
-        })
-
-        cssCache.set(url, promise)
-
-        return promise
-      },
-      addGlobalFn: (key, fn, name = false, parent = window) => {
-        if (!false && key.startsWith('pjax')) return
-        const globalFn = parent.globalFn || {}
-        globalFn[key] = globalFn[key] || {}
-        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
-        parent.globalFn = globalFn
-      }
-    }
-  
-      
-      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
-      const activateDarkMode = () => {
-        document.documentElement.dataset.theme = 'dark'
-        if (metaThemeColor !== null) {
-          metaThemeColor.setAttribute('content', '#0d0d0d')
-        }
-      }
-      const activateLightMode = () => {
-        document.documentElement.dataset.theme = 'light'
-        if (metaThemeColor !== null) {
-          metaThemeColor.setAttribute('content', '#ffffff')
-        }
-      }
-
-      btf.activateDarkMode = activateDarkMode
-      btf.activateLightMode = activateLightMode
-
-      const theme = saveToLocal.get('theme')
+<head>
+    <meta charset="utf-8">
     
-          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+    <title>Gray Zone 0.5 Update | rln is dasabi</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon/favicon.ico">
+    
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/tagplugins.css">
+
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+    
+
+
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom.xml" title="rln is dasabi" type="application/atom+xml" />
+    
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div class="blog-header">
+   <a id="menu-nav-icon"><img src="/image/menu.png"/></a>
+   <div class="nav-container">
+     <nav id="main-nav">
+       
+         <a class="main-nav-link" href="/">Home</a>
+       
+         <a class="main-nav-link" href="/archives">Archives</a>
+       
+     </nav>
+   </div>
+   <!--
+   <div id="search-form-wrap">
+     <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+   </div>
+ -->
+    <h1 class="blog-title">rln is dasabi</h1>
+    <p class="lead blog-description"></p>
+</div>
+
+  <div id='main-part'>
+      <div class="main">
+<div class="blog-post">
+    <!-- Title -->
+    <h1 class="blog-post-title">
+        <a href="/2026/10/17/我的第一篇博客/">
+            Gray Zone 0.5 Update
+        </a>
+    </h1>
+    <!-- Date and Author -->
+    <p class="blog-post-meta">
+        2026-10-17
         
-      
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
-      }
+    </p>
+
     
-      
-    const detectApple = () => {
-      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-  
-    })()
-  </script><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
-  copy: {
-    success: '复制成功',
-    error: '复制失败',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  dateSuffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'null',
-  Snackbar: undefined,
-  infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
-    buttonText: '加载更多'
-  },
-  isPhotoFigcaption: false,
-  islazyloadPlugin: false,
-  isAnchor: false,
-  percent: {
-    toc: true,
-    rightside: false,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'Gray Zone 0.5 Update',
-  isHighlightShrink: false,
-  isToc: true,
-  pageType: 'post'
-}</script><meta name="generator" content="Hexo 8.1.2"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">rln is dasabi</span></a><a class="nav-page-title" href="/"><span class="site-name">Gray Zone 0.5 Update</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Gray Zone 0.5 Update</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-10-17T07:44:55.000Z" title="发表于 2026-10-17 15:44:55">2026-10-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-10-17T09:22:19.410Z" title="更新于 2026-10-17 17:22:19">2026-10-17</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Hey, everyone,<br>The Rogue Ops update for Gray Zone Warfare launches on October 22. To express our gratitude for your support, all Supporter Edition owners will receive access to the update preview starting October 19. Any progress made during this period will carry over to the full release.<br>Read on to learn how to access the preview.</p>
+
+    <!-- Content -->
+    <h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>Hey, everyone,<br>The Rogue Ops update for Gray Zone Warfare launches on October 22. To express our gratitude for your support, all Supporter Edition owners will receive access to the update preview starting October 19. Any progress made during this period will carry over to the full release.<br>Read on to learn how to access the preview.</p>
 <p>How to Access the Supporter Preview<br>To join the Supporter Preview, you need to own the Supporter Edition of Gray Zone Warfare.<br>If you would like to purchase the Supporter Edition or upgrade your current edition, you can do so through the game’s store page. Players who already own the base game, Tactical Edition, or Elite Edition can upgrade to Supporter by paying only the price difference.<br>Once the preview begins on October 19, you will need to switch your Steam branch in order to download the 0.5 build. Please note that after switching, you will not be able to return to version 0.4.7.5. The exact start time will be announced later.<br>How to download the update:<br>Open Steam<br>Right-click on Gray Zone Warfare in your Library<br>Select “Properties”<br>Go to “Game Versions &amp; Betas”<br>Select the “supporter-preview” branch<br>Download version 0.5 by clicking “Update” in Steam. If the option does not appear, restart Steam, switch to offline mode, then back online, and try again.<br>Launch the game<br>Here is a video showing how to switch branches on Steam:</p>
 <p>Soft Wipe<br>With Update 0.5, we are avoiding a full wipe and proceeding with a partial wipe instead. This will allow us to rebalance the in-game economy for the new update while letting players retain their progression and avoid having to grind from scratch.<br>Players will retain their progression from Update 0.4, including completed tasks, rank, unlocked apparel, vendor levels, and statistics, while their locker and money will be wiped.<br>When first entering the Supporter Preview or the full release of Update 0.5, players will need to choose which mode they want to transfer their existing character progression to. This action is irreversible. The faction stays the same.</p>
 <p>What the Supporter Edition Includes<br>The Supporter Edition offers unique cosmetic apparel, a special supporter designation, additional equipment, the largest locker, and a lockbox.<br>Locker Size (10x60)<br>Secure Lockbox (3x3)<br>GZW T-shirt (in-game)<br>GZW Trousers (in-game)<br>GZW Gloves (in-game)<br>Special Supporter Color Name<br>Exclusive Supporter Badge<br>Supporter Edition Equipment &amp; Money<br>Supporter Morale patch</p>
 <p>What’s New in Rogue Ops<br>Rogue Ops introduces an exciting new gameplay loop centered around crafting and building your Hideout, alongside new high-risk tasks and contraband operations that let you build your reputation as a rogue PMC.<br>You can now create multiple playable characters and explore plenty of new content, including new weapons and enormous new locations. The update also brings a wide range of community-requested improvements, a streamlined health system, enhanced visuals, and environmental improvements that make Lamang feel more alive.<br>Key features:<br>Hideout<br>Crafting<br>Smuggling, Hunting<br>Multiple playable characters<br>New major locations and numerous small locations<br>Living World<br>New Anti-Cheat Measures<br>Streamlined health system<br>7 new weapons, 340+ weapon parts<br>Story-driven sound design<br>Audio polish<br>New AI behavior<br>New animations<br>New tasks<br>Reworked Combat Outposts<br>Economy balancing<br>Visual polish<br>Improved lighting<br>Clouds refactor<br>Technical improvements<br>Optimization<br>Learn more in our video devlogs or read their summaries here:<br>Player-Driven Improvements<br>New Content<br>[Upcoming] New Features<br>The full changelog will be posted with the release.<br>We look forward to seeing you at the Supporter Preview and hearing your feedback. Let us know if you have any questions.<br>Every Move Matters,<br>MADFINGER Games Team</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Jadgtiger</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">rln is dasabi</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/10/17/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Hello World</div></div><div class="info-2"><div class="info-item-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote sites1$ hexo deploy  More info: Deployment </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Jadgtiger</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="Gray Zone 0.5 Update">Gray Zone 0.5 Update</a><time datetime="2026-10-17T07:44:55.000Z" title="发表于 2026-10-17 15:44:55">2026-10-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/17/hello-world/" title="Hello World">Hello World</a><time datetime="2026-10-17T07:31:41.022Z" title="发表于 2026-10-17 15:31:41">2026-10-17</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Jadgtiger</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.7.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+
+
+    <!-- Social share choices -->
+    
+  <div id="social-share">
+    <a data-url="http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener" href="https://plus.google.com/share?url=" class="googleplus"><img src="/image/googleplusicon.png" alt=""/></a>
+    <a data-url="http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=" class="twitter"><img src="/image/twittericon.png" alt=""/></a>
+    <a data-url="http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener" href="http://pinterest.com/pin/create/button/?url=" class="pinterest"><img src="/image/pinteresticon.png" alt=""/></a>
+    <a data-url="http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=" class="facebook"><img src="/image/facebookicon.png" alt=""/></a>
+  </div>
+
+
+
+
+
+<!--
+
+
+https://www.facebook.com/sharer/sharer.php?u=http://example.com/2026/10/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/
+http://example.com/2026/10/17/%25E6%2588%2591%25E7%259A%2584%25E7%25AC%25AC%25E4%25B8%2580%25E7%25AF%2587%25E5%258D%259A%25E5%25AE%25A2/
+-->
+
+
+
+    <hr />
+
+
+    <!-- Tags and Categories links -->
+    
+
+    
+
+
+    <!-- Comment using disqus -->
+    
+
+</div>
+</div>
+
+
+  </div>
+  <!-- Footer -->
+  <div id="footer">
+  <div id="footer-social">
+    
+    
+    
+    
+    
+    
+</div>
+
+  <p id="footer-info">
+    &copy; 2026 Jadgtiger<br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
+    主题 <a href="https://github.com/Suolawangzai/hexo-theme-nebula" target="_blank">nebula</a>
+  </p>
+
+  <div id="busuanzi">
+    <span id="busuanzi_container_site_pv">
+      &hearts;
+    总访问量: <span id="busuanzi_value_site_pv"></span>
+    </span>
+  </div>
+  <!--
+  <div id="footer-info">
+    &copy; 2026 Jadgtiger<br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+  </div>
+-->
+</div>
+
+  <!-- After footer scripts -->
+  <!-- Disqus Comments -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+</body>
+
+</html>
